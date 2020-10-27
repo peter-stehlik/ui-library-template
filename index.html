@@ -8,6 +8,7 @@
 
 	<link rel="stylesheet" href="dist/css/normalize.8.0.1.css">
 	<link rel="stylesheet" href="dist/css/ui-library.css">
+	<link rel="stylesheet" href="dist/css/highlight-default.css">
 </head>
 <body>	
 	<div class="grid-body">
@@ -41,21 +42,117 @@
 
 				<h1>Grid - Fixed left column</h1>
 
-				<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repudiandae incidunt ea exercitationem <br>	porro eaque, <br> quaerat labore debitis, <br> magni officia minima. <br> Quae nostrum dolor impedit nihil pariatur <br> error dignissimos fugiat!</h1>
+				<div class="uil-tabs">
+					<div class="uil-tabs-nav">
+						<a href="#allClickableNotice__html" class="uil-tabs-nav__item is-active">HTML</a>
+						<a href="#allClickableNotice__less" class="uil-tabs-nav__item">LESS</a>
+						<a href="#allClickableNotice__sass" class="uil-tabs-nav__item">SASS</a>
+						<a href="#allClickableNotice__css" class="uil-tabs-nav__item">CSS</a>
+					</div>
+		
+					<div class="uil-tabs-content">
+						<div class="uil-tabs-content__item is-active" id="allClickableNotice__html">
+							<a href="javascript:void(0);" class="ctc"
+								data-clipboard-target="#allClickableNotice__code--html">COPY</a>
+							<pre class="html">
+		
+		<code id="allClickableNotice__code--html">
+&lt;!-- -------------- --&gt;
+&lt;!-- --- NOTICE --- --&gt;
+&lt;!-- -------------- --&gt;
+&lt;a href="#" class="notice"&gt;
+	&lt;span&gt;There is a new version of your favourite app!&lt;/span&gt;
+&lt;/a&gt;&lt;!-- / .notice  --&gt;
+		</code>
+								</pre>
+						</div>
+		
+						<div class="uil-tabs-content__item" id="allClickableNotice__less">
+							<a href="javascript:void(0);" class="ctc"
+								data-clipboard-target="#allClickableNotice__code--less">COPY</a>
+		
+							<pre class="less">
+		
+								<code id="allClickableNotice__code--less">
+@white: #fff;
+@notice-color: #7952b3;
+@gutter: 20px;
 
-				<h1>Modi, nostrum nisi? <br> Magnam ex natus error exercitationem consectetur, <br> hic pariatur quos alias quod, <br>	neque quia explicabo placeat. <br> Id iure ad repudiandae?</h1>
+.notice {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding: @gutter/2;
+	background: @notice-color;
+	color: @white;
+}
 
-				<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repudiandae incidunt ea exercitationem <br>	porro eaque, <br> quaerat labore debitis, <br> magni officia minima. <br> Quae nostrum dolor impedit nihil pariatur <br> error dignissimos fugiat!</h1>
+.notice:hover {
+	text-decoration: none;
+	color: @white;
+}
+								</code>
+							</pre>
+						</div>
+		
+						<div class="uil-tabs-content__item" id="allClickableNotice__sass">
+							<a href="javascript:void(0);" class="ctc"
+								data-clipboard-target="#allClickableNotice__code--sass">COPY</a>
+							<pre class="scss">
+		
+									<code id="allClickableNotice__code--sass">
+$white: #fff;
+$notice-color: #7952b3;
+$gutter: 20px;
 
-				<h1>Modi, nostrum nisi? <br> Magnam ex natus error exercitationem consectetur, <br> hic pariatur quos alias quod, <br>	neque quia explicabo placeat. <br> Id iure ad repudiandae?</h1>
+.notice {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding: $gutter/2;
+	background: $notice-color;
+	color: $white;
+}
 
-				<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repudiandae incidunt ea exercitationem <br>	porro eaque, <br> quaerat labore debitis, <br> magni officia minima. <br> Quae nostrum dolor impedit nihil pariatur <br> error dignissimos fugiat!</h1>
+.notice:hover {
+	text-decoration: none;
+	color: $white;
+}
+									</code>
+								</pre>
+						</div>
+		
+						<div class="uil-tabs-content__item" id="allClickableNotice__css">
+							<a href="javascript:void(0);" class="ctc"
+								data-clipboard-target="#allClickableNotice__code--css">COPY</a>
+							<pre class="css">
+		
+		<code id="allClickableNotice__code--css">
+.notice {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding: 10px;
+	background: #7952b3;
+	color: #fff;
+}
 
-				<h1>Modi, nostrum nisi? <br> Magnam ex natus error exercitationem consectetur, <br> hic pariatur quos alias quod, <br>	neque quia explicabo placeat. <br> Id iure ad repudiandae?</h1>
+.notice:hover {
+	text-decoration: none;
+	color: #fff;
+}
+		</code>
+								</pre>
+						</div>
+					</div>
+				</div>		
 			</div><!-- / .grid-main-body -->
 		</div><!-- / .grid-main -->
 	</div><!-- / .grid-body -->
 
+	<script src="dist/js/jquery.3.4.1.min.js"></script>
+	<script src="dist/js/clipboard.min.js"></script>
+	<script src="dist/js/highlight.min.10.0.3.js"></script>
 	<script src="dist/js/ui-library.js"></script>
 </body>
 </html>
