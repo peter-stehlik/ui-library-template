@@ -1,3 +1,73 @@
+.grid-body,
+.grid-side,
+.grid-side-inner,
+.grid-main {
+  height: 100vh;
+}
 
+.grid-body {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.grid-side {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  width: 240px;
+  margin-left: -240px;
+  color: #ddd;
+  background: #173f57;
+  transition: margin-left 0.3s ease-out;
+}
+.grid-side.is-opened {
+  margin-left: 0;
+}
+
+.grid-side-inner {
+  overflow-y: auto;
+}
+
+.grid-main {
+  flex: 1;
+  min-width: 100%;
+  overflow-y: auto;
+}
+
+.grid-main-side {
+  max-height: 240px;
+  background: #ddd;
+  overflow-y: auto;
+}
+
+.grid-main-body {
+  flex: 1;
+}
+
+@media all and (min-width: 1024px) {
+  .grid-side {
+    margin-left: 0;
+  }
+  .grid-side.is-opened {
+    margin-left: -240px;
+  }
+
+  .grid-main {
+    display: flex;
+    flex-direction: row;
+    min-width: 0;
+  }
+
+  .grid-main-side {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    width: 160px;
+    max-height: none;
+  }
+}
 
 /*# sourceMappingURL=ui-library.css.map */
